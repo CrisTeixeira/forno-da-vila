@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forno da Vila · Padaria artesanal em Lisboa</title>
+  <meta name="description" content="Forno da Vila — pão de massa-mãe, broa de milho e pastelaria tradicional, feitos à mão todos os dias em Lisboa.">
+  <meta name="theme-color" content="#FBF6EE">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <!-- Foto do topo carregada com prioridade -->
+  <link rel="preload" as="image" href="assets/images/hero.webp" fetchpriority="high">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+  <!-- ============ NAVEGAÇÃO ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="logo" aria-label="Forno da Vila — início">
+        <img src="assets/logo.svg" alt="" width="40" height="40">
+        <span>Forno <em>da</em> Vila</span>
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Navegação principal">
+        <ul class="nav__links">
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#horario">Horário</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+        <a href="#encomendar" class="btn btn--primary nav__cta">Encomendar</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Padaria artesanal · Lisboa</p>
+          <h1 class="reveal">Pão como antigamente, <em>feito todos os dias</em></h1>
+          <p class="hero__sub reveal">Receitas de família, farinhas portuguesas e fermentação natural de 24 horas. Acendemos o forno antes do sol nascer para que o pão chegue à tua mesa ainda morno.</p>
+          <div class="hero__ctas reveal">
+            <a href="#produtos" class="btn btn--primary btn--lg">
+              Ver produtos
+              <img src="assets/icon-seta.svg" alt="" width="20" height="20">
+            </a>
+            <a href="#encomendar" class="btn btn--outline btn--lg">Encomendar</a>
+          </div>
+          <ul class="hero__facts reveal" aria-label="Destaques">
+            <li><strong>24h</strong> de fermentação</li>
+            <li><strong>100%</strong> farinha nacional</li>
+            <li><strong>Desde 1987</strong></li>
+          </ul>
+        </div>
+
+        <div class="hero__art reveal">
+          <div class="hero__photo">
+            <img src="assets/images/hero.webp" alt="Cesto de vime cheio de pães artesanais acabados de cozer, ao lado de espigas de trigo" width="1920" height="1080" fetchpriority="high" decoding="async">
+          </div>
+          <div class="float-card float-card--oven">
+            <span class="float-card__icon"><img src="assets/icon-relogio.svg" alt="" width="22" height="22"></span>
+            <span><strong>Saído do forno às 7h</strong><small>Fornadas frescas todas as manhãs</small></span>
+          </div>
+          <div class="float-card float-card--rating">
+            <span class="float-card__icon float-card__icon--gold"><img src="assets/icon-estrela.svg" alt="" width="22" height="22"></span>
+            <span><strong>★ 4.9 no Google</strong><small>Classificação de exemplo</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRODUTOS ============ -->
+    <section class="section products" id="produtos" aria-labelledby="produtosTitulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <img src="assets/divisor-trigo.svg" alt="" width="120" height="24">
+          <h2 id="produtosTitulo">Do nosso forno para a tua mesa</h2>
+          <p>Seis clássicos que fazemos todos os dias, com tempo, paciência e as mãos na massa.</p>
+        </header>
+
+        <ul class="product-grid">
+          <li class="product-card reveal">
+            <div class="product-card__art"><img src="assets/images/pao-caseiro.webp" alt="Pão rústico redondo, polvilhado de farinha, com algumas fatias cortadas" width="1600" height="1280" loading="lazy" decoding="async"></div>
+            <div class="product-card__body">
+              <span class="tag">O mais pedido</span>
+              <h3>Pão de massa-mãe</h3>
+              <p>Côdea estaladiça e miolo húmido, com 24 horas de fermentação lenta.</p>
+              <p class="price"><span>4,50 €</span> / 800 g</p>
+            </div>
+          </li>
+          <li class="product-card reveal">
+            <div class="product-card__art"><img src="assets/images/broa-de-milho.webp" alt="Broa de milho redonda, com a côdea estaladiça e rachada, polvilhada de farinha, sobre uma mesa de madeira" width="1600" height="1056" loading="lazy" decoding="async"></div>
+            <div class="product-card__body">
+              <h3>Broa de milho</h3>
+              <p>Receita minhota com milho amarelo moído na pedra. Densa e perfumada.</p>
+              <p class="price"><span>3,20 €</span> / unidade</p>
+            </div>
+          </li>
+          <li class="product-card reveal">
+            <div class="product-card__art"><img class="pos-tart" src="assets/images/pastel-de-nata.webp" alt="Pastel de nata com açúcar em pó, num prato branco sobre mármore" width="1600" height="1200" loading="lazy" decoding="async"></div>
+            <div class="product-card__body">
+              <span class="tag tag--warm">Quentinho</span>
+              <h3>Pastel de nata</h3>
+              <p>Massa folhada feita à mão e creme de ovos queimado na hora.</p>
+              <p class="price"><span>1,30 €</span> / unidade</p>
+            </div>
+          </li>
+          <li class="product-card reveal">
+            <div class="product-card__art"><img src="assets/images/bolo-de-laranja.webp" alt="Bolo de laranja decorado com rodelas de laranja" width="1600" height="2133" loading="lazy" decoding="async"></div>
+            <div class="product-card__body">
+              <h3>Bolo de laranja</h3>
+              <p>Fofo e húmido, com sumo e raspa de laranjas do Algarve.</p>
+              <p class="price"><span>12,00 €</span> / bolo inteiro</p>
+            </div>
+          </li>
+          <li class="product-card reveal">
+            <div class="product-card__art"><img class="pos-low" src="assets/images/croissant.webp" alt="Croissants dourados empilhados numa tábua de madeira" width="1600" height="2400" loading="lazy" decoding="async"></div>
+            <div class="product-card__body">
+              <h3>Croissant de manteiga</h3>
+              <p>Folhado em 27 camadas com manteiga dos Açores. Leve e dourado.</p>
+              <p class="price"><span>1,80 €</span> / unidade</p>
+            </div>
+          </li>
+          <li class="product-card reveal">
+            <div class="product-card__art"><img class="pos-left" src="assets/images/pao-de-centeio.webp" alt="Pão de centeio escuro cortado ao meio, com o miolo à vista" width="1600" height="1060" loading="lazy" decoding="async"></div>
+            <div class="product-card__body">
+              <h3>Pão de centeio</h3>
+              <p>Rústico e escuro, com centeio de Trás-os-Montes. Dura vários dias.</p>
+              <p class="price"><span>3,90 €</span> / 600 g</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE NÓS ============ -->
+    <section class="section about" id="sobre" aria-labelledby="sobreTitulo">
+      <div class="container about__grid">
+        <div class="about__story reveal">
+          <p class="eyebrow">A nossa história</p>
+          <h2 id="sobreTitulo">Três gerações à volta do mesmo forno</h2>
+          <p>Em 1987, a avó Rosa acendeu pela primeira vez o forno a lenha numa pequena loja de bairro, em Lisboa. Fazia broa às segundas, pão de centeio às quintas e, ao domingo, o bolo de laranja que ainda hoje vendemos com a mesma receita.</p>
+          <p>Hoje é a neta, Inês, quem chega às quatro da manhã para alimentar a massa-mãe. Mudou o bairro, mudaram os clientes, mas o essencial continua igual: ingredientes honestos, tempo e muito carinho.</p>
+          <p class="about__signature">— Família Rosa</p>
+          <p class="note">História fictícia criada para efeitos de demonstração.</p>
+        </div>
+
+        <div class="about__side">
+        <figure class="about__photo reveal">
+          <img src="assets/images/pao-massa-mae.webp" alt="Três pães de massa-mãe com a côdea estaladiça polvilhada de farinha, num cesto forrado a linho" width="1920" height="1042" loading="lazy" decoding="async">
+          <figcaption class="about__caption">
+            <img src="assets/icon-trigo.svg" alt="" width="20" height="20">
+            Massa-mãe com mais de 30 anos
+          </figcaption>
+        </figure>
+
+        <ul class="values">
+          <li class="value reveal">
+            <span class="value__icon"><img src="assets/icon-trigo.svg" alt="" width="32" height="32"></span>
+            <div>
+              <h3>Ingredientes locais</h3>
+              <p>Farinhas de moinhos portugueses, ovos de quintas da região e fruta da época.</p>
+            </div>
+          </li>
+          <li class="value reveal">
+            <span class="value__icon"><img src="assets/icon-tempo.svg" alt="" width="32" height="32"></span>
+            <div>
+              <h3>Fermentação lenta</h3>
+              <p>A nossa massa-mãe tem mais de 30 anos e cada pão descansa pelo menos 24 horas.</p>
+            </div>
+          </li>
+          <li class="value reveal">
+            <span class="value__icon"><img src="assets/icon-mao.svg" alt="" width="32" height="32"></span>
+            <div>
+              <h3>Feito à mão</h3>
+              <p>Amassamos, moldamos e cortamos cada peça à mão. Nenhuma é igual à outra.</p>
+            </div>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ESPECIAL DA SEMANA ============ -->
+    <section class="special" aria-labelledby="especialTitulo">
+      <div class="container">
+        <div class="special__card reveal">
+          <div class="special__art" aria-hidden="true">
+            <img src="assets/images/pastel-de-nata.webp" alt="" width="1600" height="1200" loading="lazy" decoding="async">
+          </div>
+          <div class="special__text">
+            <p class="special__badge">Especial da semana</p>
+            <h2 id="especialTitulo">Pastéis de nata · leve 6, pague 5</h2>
+            <p>Para a mesa de domingo ou para adoçar o escritório. Válido em loja e nas encomendas.</p>
+          </div>
+          <div class="countdown" id="countdown" aria-live="off">
+            <p class="countdown__label">Termina dentro de</p>
+            <div class="countdown__grid">
+              <div class="countdown__unit"><span data-unit="days">0</span><small>dias</small></div>
+              <div class="countdown__unit"><span data-unit="hours">00</span><small>horas</small></div>
+              <div class="countdown__unit"><span data-unit="minutes">00</span><small>min</small></div>
+              <div class="countdown__unit"><span data-unit="seconds">00</span><small>seg</small></div>
+            </div>
+            <a href="#encomendar" class="btn btn--light">Aproveitar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AVALIAÇÕES ============ -->
+    <section class="section reviews" aria-labelledby="avaliacoesTitulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <img src="assets/divisor-trigo.svg" alt="" width="120" height="24">
+          <h2 id="avaliacoesTitulo">O que dizem os vizinhos</h2>
+          <p>Avaliações de exemplo, criadas para demonstração.</p>
+        </header>
+        <div class="review-grid">
+          <figure class="review reveal">
+            <span class="example-badge">Exemplo</span>
+            <img class="review__quote" src="assets/icon-aspas.svg" alt="" width="48" height="48">
+            <p class="review__stars" aria-label="5 estrelas">★★★★★</p>
+            <blockquote>“O pão de massa-mãe é o melhor que já comi em Lisboa. Passo cá todas as manhãs antes do trabalho.”</blockquote>
+            <figcaption><span class="avatar">MC</span><span><strong>Marta Costa</strong><small>Cliente fictícia · Campo de Ourique</small></span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="example-badge">Exemplo</span>
+            <img class="review__quote" src="assets/icon-aspas.svg" alt="" width="48" height="48">
+            <p class="review__stars" aria-label="5 estrelas">★★★★★</p>
+            <blockquote>“Os pastéis de nata saem quentinhos às 8h. Atendimento simpático e cheira a padaria de aldeia.”</blockquote>
+            <figcaption><span class="avatar avatar--brown">JS</span><span><strong>João Silva</strong><small>Cliente fictício · Alfama</small></span></figcaption>
+          </figure>
+          <figure class="review reveal">
+            <span class="example-badge">Exemplo</span>
+            <img class="review__quote" src="assets/icon-aspas.svg" alt="" width="48" height="48">
+            <p class="review__stars" aria-label="5 estrelas">★★★★★</p>
+            <blockquote>“Encomendei o bolo de laranja para o aniversário da minha mãe. Toda a gente pediu a receita!”</blockquote>
+            <figcaption><span class="avatar avatar--gold">AF</span><span><strong>Ana Ferreira</strong><small>Cliente fictícia · Graça</small></span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HORÁRIO E LOCALIZAÇÃO ============ -->
+    <section class="section visit" aria-labelledby="visitaTitulo">
+      <div class="container">
+        <header class="section-head reveal">
+          <img src="assets/divisor-trigo.svg" alt="" width="120" height="24">
+          <h2 id="visitaTitulo">Vem visitar-nos</h2>
+          <p>Estamos no coração do bairro, a dois passos do elétrico 28.</p>
+        </header>
+
+        <div class="visit__grid">
+          <div class="hours card reveal" id="horario">
+            <div class="hours__head">
+              <h3>Horário</h3>
+              <span class="status" id="openStatus">A verificar…</span>
+            </div>
+            <table class="hours__table">
+              <caption class="sr-only">Horário de funcionamento</caption>
+              <tbody>
+                <tr data-day="1"><th scope="row">Segunda-feira</th><td>07:00 – 20:00</td></tr>
+                <tr data-day="2"><th scope="row">Terça-feira</th><td>07:00 – 20:00</td></tr>
+                <tr data-day="3"><th scope="row">Quarta-feira</th><td>07:00 – 20:00</td></tr>
+                <tr data-day="4"><th scope="row">Quinta-feira</th><td>07:00 – 20:00</td></tr>
+                <tr data-day="5"><th scope="row">Sexta-feira</th><td>07:00 – 20:00</td></tr>
+                <tr data-day="6"><th scope="row">Sábado</th><td>07:30 – 14:00</td></tr>
+                <tr data-day="0"><th scope="row">Domingo</th><td>08:00 – 13:00</td></tr>
+              </tbody>
+            </table>
+
+            <div class="order" id="encomendar">
+              <h3>Encomendas</h3>
+              <p>Liga-nos até às 18h da véspera e deixamos tudo pronto a levantar.</p>
+              <p class="order__phone">
+                <img src="assets/icon-telefone.svg" alt="" width="22" height="22">
+                <span>21 000 0000 <small>(número fictício)</small></span>
+              </p>
+            </div>
+          </div>
+
+          <div class="map reveal" id="contactos" role="img" aria-label="Mapa ilustrativo com a localização da padaria na Rua Fictícia 12, Lisboa">
+            <span class="map__river"></span>
+            <span class="map__street map__street--a"></span>
+            <span class="map__street map__street--b"></span>
+            <span class="map__street map__street--c"></span>
+            <span class="map__street map__street--d"></span>
+            <span class="map__block map__block--1"></span>
+            <span class="map__block map__block--2"></span>
+            <span class="map__block map__block--3"></span>
+            <span class="map__block map__block--4"></span>
+            <span class="map__park"></span>
+            <span class="map__label map__label--river">Rio Tejo</span>
+            <div class="map__pin">
+              <img src="assets/icon-pin.svg" alt="" width="48" height="48">
+            </div>
+            <div class="map__card">
+              <strong>Forno da Vila</strong>
+              <span>Rua Fictícia 12, Lisboa</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo">
+          <img src="assets/logo.svg" alt="" width="40" height="40">
+          <span>Forno <em>da</em> Vila</span>
+        </a>
+        <p>Pão artesanal de fermentação natural, feito à mão todos os dias em Lisboa.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Visita</h3>
+        <p>Rua Fictícia 12<br>Lisboa</p>
+      </div>
+      <div class="footer__col">
+        <h3>Segue-nos</h3>
+        <div class="socials">
+          <a href="#" aria-label="Instagram (exemplo)"><img src="assets/social-instagram.svg" alt="" width="22" height="22"></a>
+          <a href="#" aria-label="Facebook (exemplo)"><img src="assets/social-facebook.svg" alt="" width="22" height="22"></a>
+          <a href="#" aria-label="WhatsApp (exemplo)"><img src="assets/social-whatsapp.svg" alt="" width="22" height="22"></a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> Forno da Vila. Padaria fictícia criada para demonstração.</p>
+      <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
